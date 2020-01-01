@@ -1,8 +1,9 @@
 #kuina
 {
     text-align: left;
+    font-size: 11px;
+    padding: 0px 0px 0px 7px;
     font-size: 13px;
-    padding: 5px 3px;
 }
 
 #dialog
@@ -32,14 +33,26 @@
 #dialog:before
 {
     box-shadow:
-    375px 5px black,375px 6px black,375px 7px black,375px 8px black,375px 9px black
-    ,375px 10px black,375px 11px black,375px 12px black,375px 13px black,375px 14px black
-    ,375px 15px black,375px 16px black,375px 17px black,375px 18px black,375px 19px black
-    ,375px 20px black,375px 21px black,375px 22px black,375px 23px black,375px 24px black;
+    377px 6px black,378px 6px black,391px 6px black,392px 6px black,
+    378px 7px black,379px 7px black,390px 7px black,391px 7px black,
+    379px 8px black,380px 8px black,389px 8px black,390px 8px black,
+    380px 9px black,381px 9px black,388px 9px black,389px 9px black,
+    381px 10px black,382px 10px black,387px 10px black,388px 10px black,
+    382px 11px black,383px 11px black,386px 11px black,387px 11px black,
+    383px 12px black,384px 12px black,385px 12px black,386px 12px black,
+    384px 13px black,385px 13px black,384px 13px black,385px 13px black,
+    385px 14px black,386px 14px black,383px 14px black,384px 14px black,
+    386px 15px black,387px 15px black,382px 15px black,383px 15px black,
+    387px 16px black,388px 16px black,381px 16px black,382px 16px black,
+    388px 17px black,389px 17px black,380px 17px black,381px 17px black,
+    389px 18px black,390px 18px black,379px 18px black,380px 18px black,
+    390px 19px black,391px 19px black,378px 19px black,379px 19px black,
+    391px 20px black,392px 20px black,377px 20px black,378px 20px black
+    ;
 }
 #dialog:after
 {
-    box-shadow: 10px 20px #808080;
+    box-shadow: 8px 20px #808080;
 }
 
 #keikoku_mark
@@ -71,11 +84,12 @@ button
     border: solid 1px #1e88e5;
     outline: dotted 1px black;
     outline-offset: -2px;
+    cursor: pointer;
 }
 
 #background
 {
-    padding: 13px 2px 13px 0px;
+    padding: 11px 2px 13px 0px;
     background-color: #eceff1;  
 }
 
