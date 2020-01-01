@@ -1,0 +1,91 @@
+#kuina
+{
+    text-align: left;
+    font-size: 13px;
+    padding: 5px 3px;
+}
+
+#dialog
+{
+    width: 400px;
+    height: 170px;
+    margin: auto;
+    margin-top: 30vh;
+    display: none;
+    text-align: center;
+    border: 1px solid #40c4ff;
+}
+
+#dialog
+{
+    position: relative;
+}
+#dialog:before,
+#dialog:after
+{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 1px;
+}
+#dialog:before
+{
+    box-shadow:
+    375px 5px black,375px 6px black,375px 7px black,375px 8px black,375px 9px black
+    ,375px 10px black,375px 11px black,375px 12px black,375px 13px black,375px 14px black
+    ,375px 15px black,375px 16px black,375px 17px black,375px 18px black,375px 19px black
+    ,375px 20px black,375px 21px black,375px 22px black,375px 23px black,375px 24px black;
+}
+#dialog:after
+{
+    box-shadow: 10px 20px #808080;
+}
+
+#keikoku_mark
+{
+    width: 40px;
+    height: 40px;
+    vertical-align:middle;
+    padding: 8px 8px 8px 0px;
+}
+
+#main_text
+{
+    vertical-align:middle;
+}
+
+#inline
+{
+    margin: 23px;
+    display: flex;
+}
+
+button
+{
+    padding: 2px 30px;
+    margin: 0px 2px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: solid 1px #1e88e5;
+    outline: dotted 1px black;
+    outline-offset: -2px;
+}
+
+#background
+{
+    padding: 13px 2px 13px 0px;
+    background-color: #eceff1;  
+}
+
+/* button:hover
+{
+
+} */
+
+#hai
+{
+    font-size: 11px;
+    padding: 2px 22px
+}
