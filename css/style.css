@@ -1,9 +1,51 @@
+#float
+{
+    display: float left;
+    vertical-align: top;
+}
+
 #kuina
 {
     text-align: left;
     font-size: 11px;
     padding: 0px 0px 0px 7px;
     font-size: 13px;
+}
+
+
+#batu_hover
+{
+    text-align: right;
+    color: white;
+    margin: -19px 0px 0px 0px;
+}
+
+#batu_hover:before,
+#batu_hover:after
+{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 1px;
+}
+#batu_hover:before
+{
+    box-shadow:
+    300px 6px red;
+}
+
+#batu
+{
+    color: white;
+    border: white;
+    background-color: white;
+    padding: 20px 16px 8px 13px;
+}
+
+#batu:hover
+{
+    background-color: red;
 }
 
 #dialog
@@ -15,12 +57,9 @@
     display: none;
     text-align: center;
     border: 1px solid #40c4ff;
-}
-
-#dialog
-{
     position: relative;
 }
+
 #dialog:before,
 #dialog:after
 {
@@ -30,6 +69,7 @@
     width: 1px;
     height: 1px;
 }
+
 #dialog:before
 {
     box-shadow:
@@ -47,12 +87,7 @@
     388px 17px black,389px 17px black,380px 17px black,381px 17px black,
     389px 18px black,390px 18px black,379px 18px black,380px 18px black,
     390px 19px black,391px 19px black,378px 19px black,379px 19px black,
-    391px 20px black,392px 20px black,377px 20px black,378px 20px black
-    ;
-}
-#dialog:after
-{
-    box-shadow: 8px 20px #808080;
+    391px 20px black,392px 20px black,377px 20px black,378px 20px black;
 }
 
 #keikoku_mark
@@ -74,32 +109,32 @@
     display: flex;
 }
 
-button
+#background button
 {
     padding: 2px 30px;
     margin: 0px 2px;
     display: inline-block;
     text-decoration: none;
     color: black;
-    border: solid 1px #1e88e5;
+    border: solid 2px #1e88e5;
     outline: dotted 1px black;
-    outline-offset: -2px;
+    outline-offset: -3px;
     cursor: pointer;
+}
+
+#background button:hover
+{
+    background-color: #e3f2fd;
 }
 
 #background
 {
-    padding: 11px 2px 13px 0px;
-    background-color: #eceff1;  
+    padding: 5px 0px 8px 0px;
+    background-color: #eceff1;
 }
-
-/* button:hover
-{
-
-} */
 
 #hai
 {
     font-size: 11px;
-    padding: 2px 22px
+    padding: 2px 18px
 }
