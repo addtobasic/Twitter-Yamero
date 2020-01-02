@@ -46,6 +46,9 @@
 #batu:hover
 {
     background-color: red;
+    box-shadow:
+    300px 10px red;
+    
 }
 
 #dialog
