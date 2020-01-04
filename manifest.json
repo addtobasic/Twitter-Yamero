@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter_Yamero",
+    "description": "Stop Twitter",
+    "version": "1.0",
+    "icons": {
+        "32": "icon_32.png",
+        "48": "icon_48.jpg",
+        "128": "icon_128.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://twitter.com/", "https://tweetdeck.twitter.com/"],
+        "js": ["js/main.js"],
+        "css": ["css/style.css"]
+    }],
+    "web_accessible_resources": ["index.html"],
+    "browser_action": {
+        "default_icon": "icon_16.png",
+        "default_title": "Twitter_Yamero"
+    },
+    "permissions": [
+        "<all_urls>",
+        "tabs",
+        "background",
+        "http://*/",
+        "https://*/"
+    ]
+}

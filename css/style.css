@@ -20,21 +20,6 @@
     margin: -19px 0px 0px 0px;
 }
 
-#batu_hover:before,
-#batu_hover:after
-{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 1px;
-    height: 1px;
-}
-#batu_hover:before
-{
-    box-shadow:
-    300px 6px red;
-}
-
 #batu
 {
     color: white;
@@ -46,9 +31,6 @@
 #batu:hover
 {
     background-color: red;
-    box-shadow:
-    300px 10px red;
-    
 }
 
 #dialog
