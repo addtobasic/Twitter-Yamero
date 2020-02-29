@@ -7,7 +7,23 @@ async function injectHtml(resource, dom) {
 const target = document.getElementById("HTMLを挿入するDOM")
 injectHtml("index.html", target)
 
-setInterval(function(){dialog.style.display = 'block';},60000);
+setInterval(function(){dialog.style.display = 'block';},600);
+
+$(window).resize(modalResize);
+function modalResize(){
+
+    var w = $(window).width();
+    var h = $(window).height();
+    var cw = $("#dialog").outerWidth();
+    var ch = $("#dialog").outerHeight();
+
+  //取得した値をcssに追加する
+    $("#dialog").css({
+        "left": ((w - cw)/2) + "px",
+        "top": ((h - ch)/2) + "px"
+    });
+}
+modalResize();
 
 ok.addEventListener('click', function(){
     window.close();
