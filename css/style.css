@@ -42,8 +42,8 @@
     display: none;
     text-align: center;
     border: 1px solid #40c4ff;
-    position:absolute;
-    z-index: 100;
+    z-index: 10000;
+    position: fixed;
 }
 
 #dialog:before,
@@ -95,7 +95,7 @@
     display: flex;
 }
 
-#background button
+#background #ok
 {
     padding: 2px 30px;
     margin: 0px 2px;
@@ -108,7 +108,43 @@
     cursor: pointer;
 }
 
-#background button:hover
+#background #ok:hover
+{
+    background-color: #e3f2fd;
+}
+
+#background #hai
+{
+    padding: 2px 30px;
+    margin: 0px 2px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: solid 2px #1e88e5;
+    outline: dotted 1px black;
+    outline-offset: -3px;
+    cursor: pointer;
+}
+
+#background #hai:hover
+{
+    background-color: #e3f2fd;
+}
+
+#background #yes
+{
+    padding: 2px 30px;
+    margin: 0px 2px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: solid 2px #1e88e5;
+    outline: dotted 1px black;
+    outline-offset: -3px;
+    cursor: pointer;
+}
+
+#background #yes:hover
 {
     background-color: #e3f2fd;
 }

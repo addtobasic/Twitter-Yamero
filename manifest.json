@@ -4,18 +4,23 @@
     "description": "Stop Twitter",
     "version": "1.0",
     "icons": {
-        "32": "icon_32.png",
-        "48": "icon_48.jpg",
-        "128": "icon_128.png"
+        "32": "icons/icon_32.png",
+        "48": "icons/icon_48.jpg",
+        "128": "icons/icon_128.png"
     },
     "content_scripts": [{
         "matches": ["https://twitter.com/*", "https://tweetdeck.twitter.com/*"],
-        "js": ["js/main.js","jquery.min.js"],
-        "css": ["css/style.css"]
+        "js": ["js/jquery.min.js","js/main.js"],
+        "css": ["css/style.css"],
+        "images":["images/keikoku_mark"]
     }],
+
+    "web_accessible_resources": [
+        "images/*"
+    ],
     
     "browser_action": {
-        "default_icon": "icon_16.png",
+        "default_icon": "icons/icon_16.png",
         "default_title": "Twitter_Yamero"
     },
     "permissions": [
