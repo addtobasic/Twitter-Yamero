@@ -38,7 +38,7 @@
     width: 400px;
     height: 170px;
     margin: auto;
-    /* margin-top: 30vh; */
+    background-color: white;
     display: none;
     text-align: center;
     border: 1px solid #40c4ff;

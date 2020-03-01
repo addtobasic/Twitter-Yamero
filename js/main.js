@@ -7,7 +7,13 @@ async function injectHtml(resource, dom) {
 const target = document.getElementById("HTMLを挿入するDOM")
 injectHtml("index.html", target)
 
-setInterval(function(){dialog.style.display = 'block';},600);
+var body = document.querySelector('body');
+body.insertAdjacentHTML('afterbegin','<div id="dialog"><div id="float"><div id="kuina">Twitter_Yameroからの警告</div><div id="batu_hover"><button id="batu" type="button" onfocus="this.blur();"></button></div></div><div id="inline"><img id="keikoku_mark" src="./css/images/keikoku_mark" alt="keikoku_mark"><p id="main_text">ツイッターを閉じて、作業をしますか？</p></div><div id="background"><button id="ok">OK</button><button id="hai">はい(Y)</button><button id="yes">Yes</button></div></div>');
+// var jquery = document.getElementById('#dialog');
+// dialog.insertAdjacentHTML('afterend','<script src="https://code.jquery.com/jquery-3.3.1.js"></script>')
+setInterval(function(){
+    dialog.style.display = 'block';
+},600);
 
 $(window).resize(modalResize);
 function modalResize(){
@@ -22,6 +28,14 @@ function modalResize(){
         "left": ((w - cw)/2) + "px",
         "top": ((h - ch)/2) + "px"
     });
+
+    // var a = window.parent.screen.width;
+    // var b = winsow.parent.screen.height;
+    // var c = document.getElementById("dialog").style.width;
+    // var d = document.getElementById("dialog").style.height;
+
+    // document.getElementById('dialog').style.left = (a-c)/2 + "px";
+    // document.getElementById('dialog').style.top = (b-d)/2 + "px";
 }
 modalResize();
 

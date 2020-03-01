@@ -9,11 +9,11 @@
         "128": "icon_128.png"
     },
     "content_scripts": [{
-        "matches": ["https://twitter.com/", "https://tweetdeck.twitter.com/"],
-        "js": ["js/main.js"],
+        "matches": ["https://twitter.com/*", "https://tweetdeck.twitter.com/*"],
+        "js": ["js/main.js","jquery.min.js"],
         "css": ["css/style.css"]
     }],
-    "web_accessible_resources": ["index.html"],
+    
     "browser_action": {
         "default_icon": "icon_16.png",
         "default_title": "Twitter_Yamero"
