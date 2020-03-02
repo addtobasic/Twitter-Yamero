@@ -6,31 +6,17 @@
 
 #kuina
 {
-    text-align: left;
-    font-size: 11px;
     padding: 0px 0px 0px 7px;
     font-size: 13px;
-}
-
-
-#batu_hover
-{
-    text-align: right;
-    color: white;
-    margin: -19px 0px 0px 0px;
+    color: initial;
+    display: flex;
 }
 
 #batu
 {
-    color: white;
-    border: white;
-    background-color: white;
-    padding: 20px 16px 8px 13px;
-}
-
-#batu:hover
-{
-    background-color: red;
+    margin: 0px 0px 0px 201px;
+    float: right;
+    cursor: pointer;
 }
 
 #dialog
@@ -46,36 +32,6 @@
     position: fixed;
 }
 
-#dialog:before,
-#dialog:after
-{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 1px;
-    height: 1px;
-}
-
-#dialog:before
-{
-    box-shadow:
-    377px 6px black,378px 6px black,391px 6px black,392px 6px black,
-    378px 7px black,379px 7px black,390px 7px black,391px 7px black,
-    379px 8px black,380px 8px black,389px 8px black,390px 8px black,
-    380px 9px black,381px 9px black,388px 9px black,389px 9px black,
-    381px 10px black,382px 10px black,387px 10px black,388px 10px black,
-    382px 11px black,383px 11px black,386px 11px black,387px 11px black,
-    383px 12px black,384px 12px black,385px 12px black,386px 12px black,
-    384px 13px black,385px 13px black,384px 13px black,385px 13px black,
-    385px 14px black,386px 14px black,383px 14px black,384px 14px black,
-    386px 15px black,387px 15px black,382px 15px black,383px 15px black,
-    387px 16px black,388px 16px black,381px 16px black,382px 16px black,
-    388px 17px black,389px 17px black,380px 17px black,381px 17px black,
-    389px 18px black,390px 18px black,379px 18px black,380px 18px black,
-    390px 19px black,391px 19px black,378px 19px black,379px 19px black,
-    391px 20px black,392px 20px black,377px 20px black,378px 20px black;
-}
-
 #keikoku_mark
 {
     width: 40px;
@@ -86,7 +42,10 @@
 
 #main_text
 {
-    vertical-align:middle;
+    color: initial;
+    margin: 15px;
+    font-family: initial;
+
 }
 
 #inline
@@ -95,7 +54,7 @@
     display: flex;
 }
 
-#background #ok
+#background button
 {
     padding: 2px 30px;
     margin: 0px 2px;
@@ -106,57 +65,26 @@
     outline: dotted 1px black;
     outline-offset: -3px;
     cursor: pointer;
+    border-radius: initial;
+    background-color: initial;
+    font-weight: initial;
 }
 
-#background #ok:hover
+#background button:hover
 {
     background-color: #e3f2fd;
 }
 
-#background #hai
-{
-    padding: 2px 30px;
-    margin: 0px 2px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: solid 2px #1e88e5;
-    outline: dotted 1px black;
-    outline-offset: -3px;
-    cursor: pointer;
-}
-
-#background #hai:hover
-{
-    background-color: #e3f2fd;
-}
-
-#background #yes
-{
-    padding: 2px 30px;
-    margin: 0px 2px;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: solid 2px #1e88e5;
-    outline: dotted 1px black;
-    outline-offset: -3px;
-    cursor: pointer;
-}
-
-#background #yes:hover
-{
-    background-color: #e3f2fd;
-}
 
 #background
 {
-    padding: 5px 0px 8px 0px;
+    padding: 5px 0px 9px 0px;
     background-color: #eceff1;
 }
 
 #hai
 {
     font-size: 11px;
-    padding: 2px 18px
+    padding: 2px 18px;
+    border: 2px;
 }

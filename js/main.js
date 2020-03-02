@@ -1,5 +1,7 @@
-const imageURL = chrome.extension.getURL('images/keikoku_mark');
-const imageTag = `<img id="keikoku_mark" src="${imageURL}">`;
+const keikokuURL = chrome.extension.getURL('images/keikoku_mark');
+const keikokuTag = `<img id="keikoku_mark" src="${keikokuURL}">`;
+const batuURL = chrome.extension.getURL('images/batuhover.png');
+var batuTag = `<img id="batu" src="${batuURL}">`;
 
 function dialogResize(){
     var w = $(window).width();
@@ -19,19 +21,18 @@ async function injectHtml(resource, dom) {
     dom.innerHTML = html
 }
 
-const target = document.getElementById("HTMLを挿入するDOM")
+const target = document.getElementById("")
 injectHtml("index.html", target)
 
 var body = document.querySelector('body');
-body.insertAdjacentHTML('afterbegin','<div id="dialog"><div id="float"><div id="kuina">Twitter_Yameroからの警告</div><div id="batu_hover"><button id="batu" type="button" onfocus="this.blur();"></button></div></div><div id="inline"><p id="main_text">ツイッターを閉じて、作業をしますか？</p></div><div id="background"><a href="https://www.google.com/"><button id="ok">OK</button></a><a href="https://www.google.com/"><button id="hai">はい(Y)</button></a><a href="https://www.google.com/"><button id="yes">Yes</button></a></div></div>');
+body.insertAdjacentHTML('afterbegin','<div id="dialog"><div id="float"><div id="kuina">Twitter_Yameroからの警告</div><div id="inline"><p id="main_text">ツイッターを閉じて、作業をしますか？</p></div><div id="background"><a href="https://www.google.com/"><button id="ok">OK</button></a><a href="https://www.google.com/"><button id="hai">はい(Y)</button></a><a href="https://www.google.com/"><button id="yes">Yes</button></a></div></div>');
 
-
-inline.insertAdjacentHTML('afterbegin',imageTag);
-
+inline.insertAdjacentHTML('afterbegin',keikokuTag);
+kuina.insertAdjacentHTML('beforeend',batuTag);
 
 setInterval(function(){
     dialog.style.display = 'block';
-},10000);
+},10000);//10秒
 
 dialogResize();
 
@@ -44,6 +45,7 @@ dialogResize();
 // yes.addEventListener('click', function(){
 //     window.close();
 // });
+
 batu.addEventListener('click', function(){
     dialog.style.display = 'none';
 });

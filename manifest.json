@@ -9,10 +9,10 @@
         "128": "icons/icon_128.png"
     },
     "content_scripts": [{
-        "matches": ["https://twitter.com/*", "https://tweetdeck.twitter.com/*"],
+        "matches": ["https://twitter.com/*"],
         "js": ["js/jquery.min.js","js/main.js"],
         "css": ["css/style.css"],
-        "images":["images/keikoku_mark"]
+        "images":["images/"]
     }],
 
     "web_accessible_resources": [
