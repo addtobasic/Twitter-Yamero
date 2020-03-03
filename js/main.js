@@ -1,7 +1,7 @@
 const keikokuURL = chrome.extension.getURL('images/keikoku_mark');
 const keikokuTag = `<img id="keikoku_mark" src="${keikokuURL}">`;
 const batuURL = chrome.extension.getURL('images/batuhover.png');
-var batuTag = `<img id="batu" src="${batuURL}">`;
+const batuTag = `<img id="batu" src="${batuURL}">`;
 
 function dialogResize(){
     var w = $(window).width();
@@ -33,18 +33,8 @@ kuina.insertAdjacentHTML('beforeend',batuTag);
 setInterval(function(){
     dialog.style.display = 'block';
 },10000);//10秒
-
+    
 dialogResize();
-
-// ok.addEventListener('click', function(){
-//     window.close();
-// });
-// hai.addEventListener('click', function(){
-//     window.close();
-// });
-// yes.addEventListener('click', function(){
-//     window.close();
-// });
 
 batu.addEventListener('click', function(){
     dialog.style.display = 'none';
