@@ -6,3 +6,5 @@ TwitterをやめさせるChrome拡張機能です
 Yes,はい,OKを押すと、googleのホームに飛ばされます
 
 本当はwindow.close()したかったのですがこれはwinsow.openしたタブしかcloseできないらしいので有識者の方、いい方法を教えてください
+
+ぜひcloneしてお使いください
