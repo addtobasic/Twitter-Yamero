@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Twitter_Yamero",
-    "description": "https://twitter.com/で10秒おきにTwitterをやめさせるフォームが出てきます",
+    "description": "https://twitter.com/で10秒おきにTwitterをやめさせるフォームが出てきます。https://github.com/Genshi0916/Twitter_Yamero",
     "version": "1.0",
     "icons": {
         "32": "icons/icon_32.png",
@@ -18,15 +18,13 @@
     "web_accessible_resources": [
         "images/*"
     ],
-    
+
     "browser_action": {
         "default_icon": "icons/icon_16.png",
         "default_title": "Twitter_Yamero"
     },
     "permissions": [
         "<all_urls>",
-        "tabs",
-        "background",
         "http://*/",
         "https://*/"
     ]
