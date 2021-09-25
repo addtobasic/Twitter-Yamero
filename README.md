@@ -1,4 +1,4 @@
-# Twitter_Yamero
+# Twitter-Yamero
 TwitterをやめさせるChrome拡張機能です
 
 ×を押すと一時的に消えますが、10秒後に戻ってきます
